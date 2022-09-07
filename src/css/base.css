@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/assets/fonts/Helvetica.ttf") url("/assets/fonts/Helvetica-Bold.ttf") format("truetype");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1300px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  body,
+  html {
+    font-size: 12px;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .main-title {
+    font-size: 1.25rem;
+  }
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section-banner .list-item--content {
+    width: 100%;
+  }
+}
